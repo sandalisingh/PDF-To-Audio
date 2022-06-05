@@ -1,0 +1,31 @@
+{% load static %}   <!--Loading the static tag-->
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+<div class="Credentials_Box" style="height: 20rem; margin-top: 5rem;">
+
+<div class="Login_Box">
+    
+    <h1 class="Credentials_Heading" >LOGIN</h1>
+
+    {% for  message in messages %}
+        <h5 class="Credential_Error_Message" >{{message}}</h5>
+    {% endfor %}
+
+    <form action="login" method="POST">
+        {% csrf_token %}
+
+        <p class="Credentials">USERNAME</p>
+        <input class="Credentials_Input" type="text" name="username" />
+
+        <p class="Credentials" >PASSWORD</p>
+        <input class="Credentials_Input" type="password" name="password" /><br>
+
+        <input class="Login_Button" type="submit">
+    </form>
+
+    <a class="ChangeRegisterPage" href="register" >Sign up..</a>
+
+</div>
+
+</div>

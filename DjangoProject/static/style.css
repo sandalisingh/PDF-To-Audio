@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+body{
+    font-family: roboto;
+    background-color: rgb(10, 29, 55);
+    padding-bottom: 10vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*---------------------------------F I R S T    P A G E -----------------------------*/
+.FirstPagePhoto{
+    background-image: url(pic2.jpeg); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+    width: 100vw;
+}
+
+.FirstPage_Text{
+    /* margin: 30px; */
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    opacity: 0.5;
+    height:100vh;
+    width: 100vw;
+}
+
+.FirstPage_Heading{
+    opacity: 1;
+    color: rgb(44, 46, 67);
+    font-size: 12rem;  
+    text-align: center;
+    font-family: 'roboto' ;
+    font-weight: 500;
+}
+
+.FirstPage_Para{
+    opacity: 1;
+    color: rgb(44, 46, 67);
+    font-size: 2rem;  
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-weight: 500;
+
+}
+
+/*---------------------------------1 P A G E`: N A V B A R-----------------------------*/
+.Navbar{   
+    position: fixed;
+    z-index:2;
+    width: 100%;
+}
+.Navbar ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 216, 204, 0.712);
+    margin-bottom: 30px;
+    border-bottom: 3px solid rgb(24, 29, 49);
+}
+.Navbar ul li{
+    display: inline;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+.Navbar ul li a:hover{
+    background-color: rgb(44, 46, 67);
+    color: rgb(187, 128, 130);
+    padding: 10px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+.Navbar ul li a{
+    color: rgb(10, 29, 55);
+    font-family: roboto;
+    font-size: 2vw;
+}
+
+/*------------------------- M A I N   H E A D I N G ----------------------------*/
+.Main_Heading{
+    color: rgba(255, 255, 255, 0.836); 
+    font-size: 10vh;  
+    padding-bottom: 10px; 
+    font-family: 'Dancing Script';
+    padding-top: 5rem;
+}
+
+/*-------------------------N O T E P A D----------------------------*/
+
+.Notepad{
+    padding: 0.5rem; 
+    font-size: 2rem; 
+    text-decoration: none; 
+    text-align: left; 
+    font-family: 'Dancing Script'; 
+}
+
+.Submit_Button {
+    padding: 15px;
+
+    background-color: rgba(255, 216, 204, 0.712);
+    color: rgb(240, 233, 210);
+    
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+}
+
+.Submit_Button:hover {
+    background-color: rgb(44, 46, 67);
+    color: rgb(187, 128, 130);
+    cursor: pointer;
+}
+
+/*---------------------------------L O G I N    B O X----------------------------------------*/
+
+.Credentials_Box{
+    width: 100vw;
+    display: grid;  /*brings the box*/
+    place-items: center;    /*to center of the page*/
+}
+
+.Login_Box{
+    width: 25rem;   /*1rem = 10pixel*/
+    height: 35rem;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);   /*horz spread, vert spread, kitna blur, kitna spread, pure black*/
+    padding: 3rem;
+    text-align: center;
+
+    background-color: rgba(255, 216, 204, 0.712);
+}
+
+.Login_Button{
+    padding: 10px 15px 10px 15px;
+    background-color: rgba(10, 29, 55, 0.541);
+    font-size: 20px;
+    color: rgb(240, 233, 210);
+    /* margin: 10px; */
+    border-radius: 10px;
+    font-family: roboto;
+
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.Login_Button:hover{
+    background-color: rgb(44, 46, 67);
+    color: rgb(187, 128, 130);
+
+    cursor: pointer;
+}
+
+.Credentials{
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+
+    color: rgb(10, 29, 55);
+}
+
+.Credentials_Input{
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    width: 18rem;
+    margin-bottom: -3rem;
+}
+
+.Credentials_Heading{
+    
+    color: rgb(10, 29, 55);
+
+    text-transform: uppercase;
+    letter-spacing: 0.2rem; /*letter ke bich ki spacing*/
+    word-spacing: 0.5rem;   /*word ke bich ki spacing*/
+    margin: 2rem 0 0.5rem 0;    /*top, right, bottom, left*/
+    font-size: 4.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+
+    /* margin-top: -1.2rem; */
+}
+
+.Credential_Error_Message{
+    color: red;
+    font-size: 6 rem;
+    font-family: 'roboto';
+    text-transform: capitalize;
+}
+
+.ChangeRegisterPage{
+    font-size: 1.4rem; 
+    color: rgba(10, 29, 55, 0.541);
+}
+
+
+/*------------------------------A U D I O    P L A Y E R-----------------------------------*/
+.Audio_Box{
+    width: 100vw;
+    display: grid;  /*brings the box*/
+    place-items: center;    /*to center of the page*/
+}
+
+.Audio_Box_inner{
+    width: 20rem; 
+    padding: 3rem;  
+    background-color: rgba(255, 216, 204, 0.712);
+    border-radius: 2rem;
+}
+
+/*---------------------------------D O W N L O A D----------------------------------------*/
+
+.Download_Button{ 
+    /* width: 5rem; */
+    width: 8.2rem;
+    padding: 1rem;
+    background-color: rgba(10, 29, 55, 0.541);
+    font-size: 1.1rem;
+    color: rgb(240, 233, 210);
+    margin-top: 0.3rem;
+    border-radius: 0.5rem;
+    font-family: roboto;
+
+}
+
+.Download_Button:hover {
+    background-color: rgb(44, 46, 67);
+    color: rgb(187, 128, 130);
+    cursor: pointer;
+}
+
+/*---------------------------------U P L O A D   P D F   B O X----------------------------------------*/
+
+.Upload_PDF_Box{
+    text-align: center !important;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
+    margin-top: 0.3rem;
+}
+
+.Upload_PDF_Box_inside{
+   padding: 3rem;
+}
+
+.Upload_PDF_Submit_Button, .Upload_PDF_Button{
+    padding-top: 0;
+
+    /* background-color: rgb(44, 46, 67);
+    color: rgb(187, 128, 130); */
+
+    background-color: rgba(255, 216, 204, 0.712);
+    color: rgb(240, 233, 210);
+    
+    font-size: 1.2rem;
+    
+
+    padding: 0.5rem;
+    margin: 0.3rem;
+    
+    border-radius: 10px;
+    font-family: roboto;
+}
+
+.Upload_PDF_Submit_Button:hover , .Upload_PDF_Button:hover{
+    /* background-color: rgba(255, 216, 204, 0.712);
+    color: rgb(240, 233, 210); */
+
+    background-color: rgb(44, 46, 67);
+    color: rgb(187, 128, 130);
+
+    cursor: pointer;
+}
